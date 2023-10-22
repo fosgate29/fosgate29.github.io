@@ -81,6 +81,7 @@ display('results', JSON.stringify(proof));
 
 display('logs', 'Verifying proof... ⌛');
 const verification = await noir.verifyFinalProof(proof);
+console.log(verification);
 if (verification) display('logs', 'Verifying proof... ✅');
 
 document.addEventListener('DOMContentLoaded', async () => {});
